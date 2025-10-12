@@ -4,7 +4,7 @@
     max-width: 100%;
     align-items: center;
     padding: 0px 200px;
-    background-color: #AA5A52;
+    background-color: #AA6F69;
     z-index: 2;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .header__btn { 
-    background-color: #86A750;
+    background-color: #8EA767;
     height: 35px;
     border: none;
     border-radius: 5px;

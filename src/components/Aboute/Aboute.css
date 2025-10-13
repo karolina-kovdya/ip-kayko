@@ -29,21 +29,31 @@
     margin-top: 40px;
 }
 
-.aboute__block{
+.aboute__btn{
     display: flex;
     align-items: center;
     margin: 0 60px 0 0;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    height: auto;
+    width: 250px;
 }
 
-.aboute__btn {
+.aboute__circle {
     position: relative;
+    display: block;
     width: 40px;
     height: 40px;
     background-color: #55201A;
-    border-radius: 50%;
-    border: none;
+    border-radius: 1.625rem;
+    cursor: pointer;
+    transition : all 0.45s cubic-bezier(0.65,0,.076,1);
 }
-.aboute__btn:after {
+.aboute__circle:after {
     position: absolute;
     top: 14px;
     left: 14px;
@@ -57,10 +67,26 @@
 }
 
 .aboute__btn-text {
-    margin-left: 10px;
+    padding: 12px 0;
+    margin: 0 0 0 60px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     color: #55201A;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.45s cubic-bezier(0.65,0,.076,1);
+    text-align: left;
+}
+
+.aboute__btn:hover .aboute__circle{
+    width: 100%;
+}
+
+.aboute__btn:hover .aboute__btn-text{
+    color: #f0f0f0;
 }

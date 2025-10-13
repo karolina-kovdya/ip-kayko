@@ -6,6 +6,7 @@
     padding: 0px 200px;
     background-color: #AA6F69;
     z-index: 2;
+    border-bottom: 3px solid #60919A;
 }
 
 .header__container {
@@ -44,6 +45,7 @@
     font-family: "Inter";
     font-style: normal;
     color: #fff;
+    text-decoration: none;
 }
 
 .header__icon {

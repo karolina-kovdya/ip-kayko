@@ -20,6 +20,7 @@ function Header() {
               <a
                 className='header__link'
                 href='https://t.me/+79190532886'
+                title='Написать в Telegram'
                 target='blanc'
               >
                 <img
@@ -28,13 +29,13 @@ function Header() {
                   src={icon}
                 />
               </a>
-              <p className='header__num'>+79190532886</p>
+              <a className='header__num' href="tel:+79190532886"  title='Позвонить'>+79190532886</a>
               <a
                 className='header__link'
                 href='https://wa.me/+79190532886'
                 target='blanc'
               >
-                <button className='header__btn'> Написать в WhatsApp</button>
+                <button className='header__btn' title='Написать в WhatsApp'> Написать в WhatsApp</button>
               </a>
             </div>
           </div>

@@ -6,11 +6,17 @@
     padding: 0px 200px;
 }
 
-.menu__container {
-    display: flex;
+.menu__list {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menu__link {
+    list-style-type: none;
 }
 
 .menu__btn {
@@ -25,4 +31,9 @@
     font-weight: 500;
     color: #051E22;
     cursor: pointer;
+    text-decoration: none;
+}
+.menu__btn_dark {
+    background-color: #051E22;
+    color: #60919A;
 }

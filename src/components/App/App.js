@@ -1,4 +1,5 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
 import Main from '../Main/Main';
@@ -9,8 +10,13 @@ function App() {
     <div className="App">
       <Header />
       <Menu />
-      < Main />
-      < Footer />
+      <Routes>
+        <Route
+          path='/'
+          element={<Main />} 
+        />
+      </Routes>
+      <Footer />
     </div>
   );
 }

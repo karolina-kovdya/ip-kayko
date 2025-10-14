@@ -24,6 +24,13 @@
 .header__info-web {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.header__info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__btn { 
@@ -32,12 +39,18 @@
     border: none;
     border-radius: 5px;
     font-size: 12px;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 30px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     color: #fff;
     cursor: pointer;
+    transition: transform .2s;
+}
+
+.header__btn:hover {
+    background-color: #fff;
+    color: #8EA767;
 }
 
 .header__num {
@@ -97,80 +110,40 @@
     border-bottom: 1px solid #900cb8;
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1180px) {
+    .header {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 860px){ 
     .header {
         padding: 0 40px;
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 706px){ 
     .header {
-        padding: 5px 20px 5px 40px;
+        padding: 0 20px;
     }
 
     .header__info {
         flex-direction: column;
     }
 
+    .header__logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
     .header__info-web {
-        margin-top: 10px;
-    }
-
-    .header__info-text {
-        font-size: 15px;
-    }
-
-    .header__info-name {
-        margin-left: 0;
-        font-size: 15px;
-    }
-
-    .header__info-link {
-        max-width: 400px;
-        align-items: start;
-    }
-
-    .header__gif{
-        margin-left: 20px;
-    }
-}
-
-@media screen and (max-width: 647px) {
-    .header {
-        padding: 20px 0 5px 20px;
-    }
-
-    .header__icon18 {
-        top: 5px;
-        left: 5px;
+        margin: 10px 0;
+        flex-direction: column;
     }
     
-    .header__info-text {
-        font-size: 14px;
-    }
-
-    .header__info-name {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 463px) {
-    .header__info-link {
-        max-width: 300px;
-    }
-
-    .header__gif{
-        margin-left: 100px;
-    }
-}
-
-@media screen and (max-width: 391px) {
-    .header__info-link {
-        max-width: 250px;
-    }
-
-    .header__gif{
-        margin-left: 30px;
+    .header__info-box {
+        margin-bottom: 10px;
     }
 }
 

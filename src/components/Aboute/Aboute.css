@@ -90,3 +90,64 @@
 .aboute__btn:hover .aboute__btn-text{
     color: #f0f0f0;
 }
+
+@media screen and (max-width: 1180px) {
+    .aboute {
+        padding: 0 100px;
+    }
+
+    .aboute__title {
+        font-size: 35px;
+    }
+
+    .aboute__subtitle {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 860px){ 
+    .aboute {
+        padding: 0 40px;
+    }
+
+    .aboute__title {
+        font-size: 30px;
+    }
+
+    .aboute__subtitle {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 706px){ 
+    .aboute {
+        padding: 0 20px;
+    }
+    .aboute__title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .aboute__subtitle {
+        margin-top: 50px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .aboute__link {
+        width: 238px;
+    }
+
+    .aboute__btns {
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboute__btn {
+        margin-top: 20px;
+        width: 238px;
+    }
+}

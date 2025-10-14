@@ -126,3 +126,31 @@
 .information__box {
     height: 80px;
 }
+
+@media screen and (max-width: 1180px) {
+    .information {
+        padding: 0 100px;
+    }
+
+    .information__container {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 860px){ 
+    .information {
+        padding: 0 40px;
+    }
+
+    .information__container {
+        width: 100%;
+    }
+
+    .information__info {
+        font-size: 16px;
+    }
+
+    .information__note {
+        font-size: 16px;
+    }
+}

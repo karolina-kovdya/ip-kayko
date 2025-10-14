@@ -1,0 +1,128 @@
+.information {
+    margin-top:70px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    padding: 0px 200px;
+}
+
+.information__btn {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    width: 150px;
+    height: 25px;
+    border: none;
+    background-color: #60919A;
+    color: #051E22;
+    cursor: pointer;
+    transition : all 0.45s cubic-bezier(0.65,0,.076,1);
+}
+
+.information__btn:hover {
+    background-color: #55201A;
+    color: #f0f0f0;
+}
+
+.information__container {
+    width: 900px;
+}
+
+ .information__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 30px 0 30px 0;
+ }
+
+ .information__info {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.6;
+ }
+
+ .information__note {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.6;
+ }
+
+ .information__btns {
+    display: flex;
+    margin-top: 40px;
+}
+
+.information__button{
+    display: flex;
+    align-items: center;
+    margin: 0 60px 0 0;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    height: auto;
+    width: 250px;
+}
+
+.information__circle {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #55201A;
+    border-radius: 1.625rem;
+    cursor: pointer;
+    transition : all 0.45s cubic-bezier(0.65,0,.076,1);
+}
+.information__circle:after {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.information__btn-text {
+    padding: 12px 0;
+    margin: 0 0 0 60px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #55201A;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.45s cubic-bezier(0.65,0,.076,1);
+    text-align: left;
+}
+
+.information__button:hover .information__circle{
+    width: 100%;
+}
+
+.information__button:hover .information__btn-text{
+    color: #f0f0f0;
+}
+
+.information__box {
+    height: 80px;
+}
